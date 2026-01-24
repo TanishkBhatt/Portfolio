@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <title>Tanishk Bhatt - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">TANISHK</div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#skills">SKILLS</a></li>
+            <li><a href="#projects">PROJECTS</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+            <li><button class="theme-toggle" onclick="toggleTheme()">Toggle Theme</button></li>
+        </ul>
+        <div class="menu-toggle" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home">
+        <div class="home-content">
+            <img src="img/TanishkBhatt.jpg" alt="" class="profile-image">
+            <div class="home-text">
+                <h1>TANISHK BHATT</h1>
+                <h2>Student | Programmer | Innovator</h2>
+                <div class="home-info">
+                    <p><span class="highlight">Status :</span> Student and Programmer</p>
+                    <p><span class="highlight">Interests :</span> Programming</p>
+                    <p><span class="highlight">Passion :</span> Innovation and Creativity</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2 class="section-title">ABOUT ME</h2>
+        <div class="about-content">
+            <div class="about-grid">
+                <div class="about-item">
+                    <strong>Name :</strong> Tanishk Bhatt
+                </div>
+                <div class="about-item">
+                    <strong>Age :</strong> 15 Years
+                </div>
+                <div class="about-item">
+                    <strong>Location :</strong> Pithoragarh, Uttarakhand, India
+                </div>
+                <div class="about-item">
+                    <strong>School :</strong> PM SHRI KV Pithoragarh
+                </div>
+                <div class="about-item">
+                    <strong>Goal :</strong> Software Developer
+                </div>
+                <div class="about-item">
+                    <strong>Coding Since :</strong> 2025
+                </div>
+            </div>
+            <div class="about-paragraph">
+                <p>
+                    I'm a passionate 15-year-old programmer from Pithoragarh, Uttarakhand, with a deep interest in technology and innovation. My journey into programming began in 2025, and since then, I've been captivated by the endless possibilities that code offers. As a student at PM SHRI KV Pithoragarh, I balance my academic pursuits with my love for programming and software development.
+                </p>
+                <p style="margin-top: 1rem;">
+                    My primary focus is on Python programming, particularly in the domains of Artificial Intelligence and Machine Learning. I believe that technology has the power to solve real-world problems, and I'm committed to developing my skills to become a proficient software developer. Through continuous learning and hands-on projects, I'm building a strong foundation in programming while exploring the fascinating world of data science and AI.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2 class="section-title">SKILLS & EXPERTISE</h2>
+        <div class="skills-container">
+            <div class="skill-card">
+                <h3>Current Skills</h3>
+                <ul>
+                    <li>Core Python Programming</li>
+                    <li>Pandas - Data Analysis</li>
+                    <li>NumPy - Numerical Computing</li>
+                    <li>Matplotlib - Data Visualization</li>
+                    <li>File Handling</li>
+                    <li>API Integration</li>
+                </ul>
+            </div>
+            <div class="skill-card">
+                <h3>Learning Path</h3>
+                <ul>
+                    <li>Machine Learning Libraries</li>
+                    <li>ML Models & Algorithms</li>
+                    <li>Database Management Systems</li>
+                    <li>Advanced AI Techniques</li>
+                    <li>Data Structures and Algorithms</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2 class="section-title">MY PROJECTS</h2>
+        <div class="projects-container">
+            <div class="project-card">
+                <div class="project-image">PROJECT 1</div>
+                <div class="project-content">
+                    <h3>Market Management System</h3>
+                    <p>A comprehensive system designed to manage market operations efficiently. This project demonstrates my ability to create practical solutions using Python and file handling capabilities.</p>
+                    <a href="https://github.com/TanishkBhatt/Market-Management-System/" target="_blank" class="project-link">View on GitHub →</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">PROJECT 2</div>
+                <div class="project-content">
+                    <h3>GitHub Repo Analyzer</h3>
+                    <p>An intelligent tool that analyzes GitHub repositories, providing insights and statistics. Built using Python and GitHub API to fetch and process repository data.</p>
+                    <a href="https://github.com/TanishkBhatt/Github-Repo-Analyzer" target="_blank" class="project-link">View on GitHub →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2 class="section-title">GET IN TOUCH</h2>
+        <div class="contact-container">
+            <div class="contact-form">
+                <h3 style="color: var(--accent-color); margin-bottom: 1.5rem;">Send Me a Message</h3>
+                <form action="mailto:tanishkbhatt25@gmail.com" method="post" enctype="text/plain">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+            <div class="contact-links">
+                <a href="mailto:tanishkbhatt25@gmail.com" class="contact-card">
+                    <div class="contact-icon"><img src="img/GMAIL.jpg" alt="" width="42"></div>
+                    <div class="contact-info">
+                        <h3>Email</h3>
+                        <p>tanishkbhatt25@gmail.com</p>
+                    </div>
+                </a>
+                <a href="https://github.com/TanishkBhatt" target="_blank" class="contact-card">
+                    <div class="contact-icon"><img src="img/GITHUB.png" alt="" width="65"></div>
+                    <div class="contact-info">
+                        <h3>GitHub</h3>
+                        <p>@TanishkBhatt</p>
+                    </div>
+                </a>
+                <a href="https://youtube.com/@TanishkBhatt-x6w" target="_blank" class="contact-card">
+                    <div class="contact-icon"><img src="img/YOUTUBE.png" alt="" width="50"></div>
+                    <div class="contact-info">
+                        <h3>YouTube</h3>
+                        <p>@TanishkBhatt-x6w</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Tanishk Bhatt. All Rights Reserved. | Built with Passion and Code</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
