@@ -24,7 +24,7 @@ body.light-theme {
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: var(--primary-bg);
     color: var(--text-primary);
     line-height: 1.6;
@@ -42,7 +42,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     z-index: 1000;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
     transition: all 0.3s ease;
 }
 
@@ -150,8 +150,15 @@ section {
 }
 
 @keyframes float {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-20px); }
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
 }
 
 .home-text {
@@ -217,7 +224,7 @@ section {
     background: var(--card-bg);
     padding: 3rem;
     border-radius: 15px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
 }
 
 .about-grid {
@@ -263,7 +270,7 @@ section {
     background: var(--card-bg);
     padding: 2rem;
     border-radius: 15px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
@@ -316,7 +323,7 @@ section {
     background: var(--card-bg);
     border-radius: 15px;
     overflow: hidden;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
@@ -367,8 +374,107 @@ section {
     transform: scale(1.05);
 }
 
+/* Achievements Section */
+#achievements {
+    flex-direction: column;
+}
+
+.achievements-container {
+    width: 100%;
+    max-width: 1000px;
+}
+
+.achievement-card {
+    background: var(--card-bg);
+    border-radius: 15px;
+    padding: 3rem;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin-bottom: 2rem;
+}
+
+.achievement-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(255, 215, 0, 0.3);
+}
+
+.achievement-icon {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, var(--accent-color), #ffed4e);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    color: var(--primary-bg);
+    flex-shrink: 0;
+}
+
+.achievement-content {
+    flex: 1;
+}
+
+.achievement-content h3 {
+    color: var(--accent-color);
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+}
+
+.achievement-subtitle {
+    color: var(--text-secondary);
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+.achievement-description {
+    color: var(--text-secondary);
+    margin-bottom: 1.5rem;
+    line-height: 1.8;
+}
+
+.achievement-details {
+    background: var(--secondary-bg);
+    padding: 1.5rem;
+    border-radius: 10px;
+    border-left: 4px solid var(--accent-color);
+    margin-bottom: 1.5rem;
+}
+
+.achievement-details p {
+    color: var(--text-secondary);
+    margin-bottom: 0.5rem;
+}
+
+.achievement-details strong {
+    color: var(--accent-color);
+    text-transform: uppercase;
+}
+
+.achievement-link {
+    display: inline-block;
+    padding: 0.7rem 1.5rem;
+    background: var(--accent-color);
+    color: var(--primary-bg);
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: transform 0.3s;
+}
+
+.achievement-link:hover {
+    transform: scale(1.05);
+}
+
 /* Contact Section */
 #contact {
+    background-color: var(--secondary-bg);
     flex-direction: column;
 }
 
@@ -384,7 +490,7 @@ section {
     background: var(--card-bg);
     padding: 2rem;
     border-radius: 15px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
 }
 
 .form-group {
@@ -448,7 +554,7 @@ section {
     background: var(--card-bg);
     padding: 2rem;
     border-radius: 15px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
     display: flex;
     align-items: center;
     gap: 1.5rem;
@@ -489,7 +595,7 @@ footer {
 }
 
 /* Responsive */
-@media (max-width: 780px) {
+@media (max-width: 1024px) {
     .menu-toggle {
         display: flex;
     }
@@ -503,7 +609,7 @@ footer {
         width: 100%;
         padding: 2rem;
         transition: right 0.3s;
-        box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
     }
 
     .nav-links.active {
@@ -530,5 +636,16 @@ footer {
     .profile-image {
         width: 200px;
         height: 200px;
+    }
+
+    .achievement-card {
+        flex-direction: column;
+        padding: 2rem;
+    }
+
+    .achievement-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 2rem;
     }
 }
