@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <title>Tanishk Bhatt - Portfolio</title>
+    <link rel="icon" type="image/jpg" href="img/TanishkBhatt.jpg">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <!-- Navigation -->
     <nav>
@@ -16,6 +20,7 @@
             <li><a href="#about">ABOUT</a></li>
             <li><a href="#skills">SKILLS</a></li>
             <li><a href="#projects">PROJECTS</a></li>
+            <li><a href="#achievements">ACHIEVEMENTS</a></li>
             <li><a href="#contact">CONTACT</a></li>
             <li><button class="theme-toggle" onclick="toggleTheme()">Toggle Theme</button></li>
         </ul>
@@ -29,7 +34,7 @@
     <!-- Home Section -->
     <section id="home">
         <div class="home-content">
-            <img src="img/TanishkBhatt.jpg" alt="" class="profile-image">
+            <img src="img/TanishkBhatt.jpg" alt="Tanishk Bhatt" class="profile-image">
             <div class="home-text">
                 <h1>TANISHK BHATT</h1>
                 <h2>Student | Programmer | Innovator</h2>
@@ -68,10 +73,17 @@
             </div>
             <div class="about-paragraph">
                 <p>
-                    I'm a passionate 15-year-old programmer from Pithoragarh, Uttarakhand, with a deep interest in technology and innovation. My journey into programming began in 2025, and since then, I've been captivated by the endless possibilities that code offers. As a student I balance my academic pursuits with my love for programming and software development.
+                    I'm a passionate 15-year-old programmer from Pithoragarh, Uttarakhand, with a deep interest in
+                    technology and innovation. My journey into programming began in 2025, and since then, I've been
+                    captivated by the endless possibilities that code offers. As a student I balance my academic
+                    pursuits with my love for programming and software development.
                 </p>
                 <p style="margin-top: 1rem;">
-                    My primary focus is on Python programming, particularly in the domains of Artificial Intelligence and Machine Learning. I believe that technology has the power to solve real-world problems, and I'm committed to developing my skills to become a proficient software developer. Through continuous learning and hands-on projects, I'm building a strong foundation in programming while exploring the fascinating world of data science and AI.
+                    My primary focus is on Python programming, particularly in the domains of Artificial Intelligence
+                    and Machine Learning. I believe that technology has the power to solve real-world problems, and I'm
+                    committed to developing my skills to become a proficient software developer. Through continuous
+                    learning and hands-on projects, I'm building a strong foundation in programming while exploring the
+                    fascinating world of data science and AI.
                 </p>
             </div>
         </div>
@@ -113,16 +125,48 @@
                 <div class="project-image">PROJECT 1</div>
                 <div class="project-content">
                     <h3>Market Management System</h3>
-                    <p>A comprehensive system designed to manage market operations efficiently. This project demonstrates my ability to create practical solutions using Python and file handling capabilities.</p>
-                    <a href="https://github.com/TanishkBhatt/Market-Management-System/" target="_blank" class="project-link">View on GitHub →</a>
+                    <p>A comprehensive system designed to manage market operations efficiently. This project
+                        demonstrates my ability to create practical solutions using Python and file handling
+                        capabilities.</p>
+                    <a href="https://github.com/TanishkBhatt/Market-Management-System/" target="_blank"
+                        class="project-link">View on GitHub →</a>
                 </div>
             </div>
             <div class="project-card">
                 <div class="project-image">PROJECT 2</div>
                 <div class="project-content">
                     <h3>GitHub Repo Analyzer</h3>
-                    <p>An intelligent tool that analyzes GitHub repositories, providing insights and statistics. Built using Python and GitHub API to fetch and process repository data.</p>
-                    <a href="https://github.com/TanishkBhatt/Github-Repo-Analyzer" target="_blank" class="project-link">View on GitHub →</a>
+                    <p>An intelligent tool that analyzes GitHub repositories, providing insights and statistics. Built
+                        using Python and GitHub API to fetch and process repository data.</p>
+                    <a href="https://github.com/TanishkBhatt/Github-Repo-Analyzer" target="_blank"
+                        class="project-link">View on GitHub →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements">
+        <h2 class="section-title">MY ACHIEVEMENTS</h2>
+        <div class="achievements-container">
+            <div class="achievement-card">
+                <div class="achievement-icon">
+                    <i class="fas fa-trophy"></i>
+                </div>
+                <div class="achievement-content">
+                    <h3>KVS Hackathon 2025</h3>
+                    <p class="achievement-subtitle">Consolation Prize | Zonal Round</p>
+                    <p class="achievement-description">
+                        Participated and won consolation prize in KVS Hackathon organized by IHFC IIT Delhi. The zonal
+                        round competition was held at Kendriya Vidyalaya IMA Dehradun in December 2025.
+                    </p>
+                    <div class="achievement-details">
+                        <p><strong>Problem Statement :</strong> Build a SMART Study and Life Balancer to enhance
+                            productivity and monitor progress.</p>
+                        <p><strong>Project Build :</strong> SMART Study-Life Planner</p>
+                    </div>
+                    <a href="https://tanishkbhatt.github.io/SMART-Study-Life-Planner" target="_blank"
+                        class="achievement-link">View Project →</a>
                 </div>
             </div>
         </div>
@@ -133,7 +177,7 @@
         <h2 class="section-title">GET IN TOUCH</h2>
         <div class="contact-container">
             <div class="contact-form">
-                <h3 style="color: var(--accent-color); margin-bottom: 1.5rem;">Send Me a Message</h3>
+                <h3 style="color: var(--accent-color); margin-bottom: 1.5rem;">SEND ME A MESSAGE</h3>
                 <form action="mailto:tanishkbhatt25@gmail.com" method="post" enctype="text/plain">
                     <div class="form-group">
                         <label for="name">Your Name</label>
@@ -152,21 +196,27 @@
             </div>
             <div class="contact-links">
                 <a href="mailto:tanishkbhatt25@gmail.com" class="contact-card">
-                    <div class="contact-icon">@</div>
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
                     <div class="contact-info">
                         <h3>Email</h3>
-                        <p>tanishkbhatt25@gmail.com</p>
+                        <p>@tanishkbhatt25</p>
                     </div>
                 </a>
                 <a href="https://github.com/TanishkBhatt" target="_blank" class="contact-card">
-                    <div class="contact-icon">G</div>
+                    <div class="contact-icon">
+                        <i class="fab fa-github"></i>
+                    </div>
                     <div class="contact-info">
                         <h3>GitHub</h3>
                         <p>@TanishkBhatt</p>
                     </div>
                 </a>
                 <a href="https://youtube.com/@TanishkBhatt-x6w" target="_blank" class="contact-card">
-                    <div class="contact-icon">Y</div>
+                    <div class="contact-icon">
+                        <i class="fab fa-youtube"></i>
+                    </div>
                     <div class="contact-info">
                         <h3>YouTube</h3>
                         <p>@TanishkBhatt-x6w</p>
@@ -185,5 +235,3 @@
 </body>
 
 </html>
-
-
